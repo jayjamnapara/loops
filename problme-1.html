@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop-1</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    function count(number){
+        let count = 0;
+        if(number === 0){
+            return 1;
+        }
+        do{
+            count++;
+            number = Math.floor(number/10);
+        }while(number > 0)
+        return count; 
+    }
+    let number = 123456; 
+    console.log(count(number));
+</script>
